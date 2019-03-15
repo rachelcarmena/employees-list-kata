@@ -5,6 +5,7 @@ function getAllowedToWorkOnSundays (initialEmployeesList) {
 
     return employeesList
             .filterbyAgeGreaterThanOrEqualTo(18)
+            .orderByName()
             .getList();
 };
 

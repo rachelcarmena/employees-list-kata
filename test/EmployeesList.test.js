@@ -16,3 +16,15 @@ test('should get the list of employees with age greater than or equal to 18 give
         { name: 'Mike', age: 51 }
     ]);
 });
+
+test('should get the list of employees ordered by name given a initial list of employees', () => {
+    const employeesList = new EmployeesList(initialEmployeesList);
+
+    expect(employeesList.orderByName().getList())
+    .toEqual([
+        { name: 'Max', age: 17 },
+        { name: 'Mike', age: 51 },
+        { name: 'Nina', age: 15 },
+        { name: 'Sepp', age: 18 },
+    ]);
+});
