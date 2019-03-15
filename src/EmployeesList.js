@@ -19,6 +19,12 @@ class EmployeesList {
     }
 
     capitalizeNames() {
+        //return this.list.map((employee) => { ...employee, name: employee.name.toUpperCase() });
+        this.list = this.list.map((employee) => {
+            employee.name = employee.name.toUpperCase();
+            return employee;
+        });
+
         return this;
     }
 }
