@@ -17,6 +17,10 @@ class EmployeesList {
         this.list = this.list.sort((a, b) => a.name.localeCompare(b.name));
         return this;
     }
+
+    capitalizeNames() {
+        return this;
+    }
 }
 
 module.exports = EmployeesList;

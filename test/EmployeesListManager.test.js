@@ -9,6 +9,6 @@ const employeesList = [
 
 test('should get who is allowed to work on Sundays given a list of employees', () => {
 
-    expect(getAllowedToWorkOnSundaysFrom(employeesList)).toEqual([{ name: 'Mike', age: 51 }, { name: 'Sepp', age: 18 }]);
+    expect(getAllowedToWorkOnSundaysFrom(employeesList)).toEqual([{ name: 'MIKE', age: 51 }, { name: 'SEPP', age: 18 }]);
 
 });

@@ -28,3 +28,15 @@ test('should get the list of employees ordered by name given a initial list of e
         { name: 'Sepp', age: 18 },
     ]);
 });
+
+test('should get the list of employees with capitalized names given a initial list of employees', () => {
+    const employeesList = new EmployeesList(initialEmployeesList);
+
+    expect(employeesList.capitalizeNames().getList())
+    .toEqual([
+        { name: 'MAX', age: 17 },
+        { name: 'SEPP', age: 18 },
+        { name: 'NINA', age: 15 },
+        { name: 'MIKE', age: 51 }
+    ]);
+});
