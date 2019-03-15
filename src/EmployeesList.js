@@ -14,6 +14,7 @@ class EmployeesList {
     }
 
     orderByName() {
+        this.list = this.list.sort((a, b) => a.name.localeCompare(b.name));
         return this;
     }
 }
