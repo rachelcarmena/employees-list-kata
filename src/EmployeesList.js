@@ -9,6 +9,7 @@ class EmployeesList {
     }
 
     filterbyAgeGreaterThanOrEqualTo(age) {
+        this.list = this.list.filter((employee) => employee.age >= age);
         return this;
     }
 }
